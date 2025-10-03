@@ -37,11 +37,17 @@ name = "pinocchio"
 version = "0.8.4"
 
 [[package]]
+name = "pinocchio"
+version = "0.9.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5b971851087bc3699b001954ad02389d50c41405ece3548cbcafc88b3e20017a"
+
+[[package]]
 name = "pinocchio-associated-token-account"
 version = "0.1.1"
 dependencies = [
- "pinocchio",
- "pinocchio-pubkey",
+ "pinocchio 0.8.4",
+ "pinocchio-pubkey 0.2.4",
 ]
 
 [[package]]
@@ -64,8 +70,8 @@ dependencies = [
 name = "pinocchio-memo"
 version = "0.1.0"
 dependencies = [
- "pinocchio",
- "pinocchio-pubkey",
+ "pinocchio 0.8.4",
+ "pinocchio-pubkey 0.2.4",
 ]
 
 [[package]]
@@ -73,31 +79,42 @@ name = "pinocchio-pubkey"
 version = "0.2.4"
 dependencies = [
  "five8_const",
- "pinocchio",
+ "pinocchio 0.8.4",
+]
+
+[[package]]
+name = "pinocchio-pubkey"
+version = "0.3.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "cb0225638cadcbebae8932cb7f49cb5da7c15c21beb19f048f05a5ca7d93f065"
+dependencies = [
+ "five8_const",
+ "pinocchio 0.9.2",
+ "sha2-const-stable",
 ]
 
 [[package]]
 name = "pinocchio-system"
 version = "0.2.3"
 dependencies = [
- "pinocchio",
- "pinocchio-pubkey",
+ "pinocchio 0.8.4",
+ "pinocchio-pubkey 0.2.4",
 ]
 
 [[package]]
 name = "pinocchio-token"
 version = "0.3.0"
 dependencies = [
- "pinocchio",
- "pinocchio-pubkey",
+ "pinocchio 0.9.2",
+ "pinocchio-pubkey 0.3.0",
 ]
 
 [[package]]
 name = "pinocchio-token-2022"
 version = "0.3.0"
 dependencies = [
- "pinocchio",
- "pinocchio-pubkey",
+ "pinocchio 0.9.2",
+ "pinocchio-pubkey 0.3.0",
 ]
 
 [[package]]
@@ -146,6 +163,12 @@ name = "regex-syntax"
 version = "0.8.5"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "2b15c43186be67a4fd63bee50d0303afffcef381492ebe2c5d87f324e1b8815c"
+
+[[package]]
+name = "sha2-const-stable"
+version = "0.1.0"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5f179d4e11094a893b82fff208f74d448a7512f99f5a0acbd5c679b705f83ed9"
 
 [[package]]
 name = "syn"
