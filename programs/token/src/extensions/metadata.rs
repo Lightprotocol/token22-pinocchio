@@ -235,7 +235,11 @@ impl InitializeTokenMetadata<'_> {
             data: &ix_data,
         };
 
-        invoke_signed(&instruction, &[self.metadata, self.mint_authority], signers)
+        invoke_signed(
+            &instruction,
+            &[self.metadata, self.update_authority, self.mint, self.mint_authority],
+            signers,
+        )
     }
 }
 
